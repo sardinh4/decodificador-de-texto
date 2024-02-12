@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="conteudo">
+
+        <section class="conteudo__area-insercao-texto">
+
+            <h1 class="area-insercao-texto__titulo">Decodificador de Texto</h1>
+
+            <section class="conteudo__area-insercao-texto__campo-texto">
+                <textarea oninput="exibirMensagem()" name="texto" placeholder = "Digite seu texto:" class="conteudo__area-insercao-texto__campo-texto__textarea"></textarea>        
+
+                <div class="conteudo__area-insercao-texto__campo-texto__botoes">
+                    <button onclick="criptografar()"  class="conteudo__area-insercao-texto__campo-texto__botoes__botao-criptografar"
+                        type="button">Criptografar</button>
+                    <button onclick="descriptografar()"  class="conteudo__area-insercao-texto__campo-texto__botoes__botao-descriptografar"
+                        type="button">Descriptografar</button>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="conteudo__area-decodificacao-texto">
+
+            <div class="conteudo__area-decodificacao-texto__container-logo">
+                <div class="conteudo__area-decodificacao-texto__container-logo__line"></div>
+                <img class="conteudo__area-decodificacao-texto__container-logo__logo" src="./img/logo.svg"
+                    alt="logo da empresa, a imagem de um cadeado branco localizado dentro de um escudo verde">
+                <div class="conteudo__area-decodificacao-texto__container-logo__line"></div>
+            </div>
+
+            <div class="conteudo__area-decodificacao-texto__container-conteudo">
+                <img src="./img/mensagem-nao-encontrada.svg" alt="Nenhuma mensagem encontrada">
+                <p>Nenhuma mensagem digitada.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="dados-pessoais">
+        <p>Leonardo Sardinha Santana - 2024</p>
+        <section class="dados-pessoais__redes-sociais">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/041dbc8823.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>it 

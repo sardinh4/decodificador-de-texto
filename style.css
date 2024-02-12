@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --green: #21B99F;
+    --bg-color: #F3F5FC;
+    --btn-color: #D8DFE8;
+    --container-color: #fff;
+    --border-radius: 20px;
+    --padding: 30px;
+    --font-color: #3a3939;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: var(--font-color);
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: var(--padding);
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ÁREA DE INSERÇÃO DE TEXTO */
+
+.conteudo__area-insercao-texto {
+    width: 60%;
+    height: 100%;
+    background-color: var(--container-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--padding);
+
+}
+
+.conteudo__area-insercao-texto__campo-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--padding);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* TÍTULO */
+
+.area-insercao-texto__titulo {
+    font-size: 30px;
+    font-weight: 700px;
+    text-align: start;
+    color: var(--green);
+}
+
+
+/* TEXTAREA */
+
+.conteudo__area-insercao-texto__campo-texto__textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+
+/* BOTÕES */
+
+.conteudo__area-insercao-texto__campo-texto__botoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__area-insercao-texto__campo-texto__botoes__botao-criptografar {
+    width: 45%;
+    height: 40px;
+
+    background-color: var(--green);
+    border-radius: var(--border-radius);
+}
+
+.conteudo__area-insercao-texto__campo-texto__botoes__botao-descriptografar {
+    width: 45%;
+    height: 40px;
+    background-color: var(--font-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+}
+
+
+.conteudo__area-insercao-texto__campo-texto__botoes__botao-criptografar:hover {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.conteudo__area-insercao-texto__campo-texto__botoes__botao-descriptografar:hover {
+    color: var(--green);
+    font-size: 1rem;
+}
+
+
+
+
+
+/*  ÁREA DE DECODIFICAÇÃO DO TEXTO*/
+
+.conteudo__area-decodificacao-texto {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    flex-direction: column;
+    gap: var(--padding);
+}
+
+.conteudo__area-decodificacao-texto__container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    border-top: solid 4px var(--green);
+    border-bottom: solid 4px var(--green);
+}
+
+.conteudo__area-decodificacao-texto__container-logo__logo {
+    height: 40px;
+}
+
+.conteudo__area-decodificacao-texto__container-logo__line {
+    border: solid 2px var(--green);
+    width: 100%;
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo {
+    width: 100%;
+    height: 100%;
+    background-color: var(--container-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--padding);
+    gap: var(--padding);
+
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo p {
+    width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    overflow: auto;
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo div p {
+    text-align: start;
+}
+
+
+.conteudo__area-decodificacao-texto__container-conteudo img {
+    width: 60%;
+    max-height: 80%;
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo__botao-copiar {
+    height: 40px;
+    width: 80%;
+    background-color: var(--green);
+    border-radius: var(--border-radius);
+
+}
+
+.conteudo__area-decodificacao-texto__container-conteudo__botao-copiar:hover {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+
+/* RODAPÉ - DADOS PESSOAIS */
+
+
+
+.dados-pessoais {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding);
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        justify-content:baseline;
+        gap: var(--padding);
+        height: 100vh;
+
+    }
+
+    .conteudo {
+
+        width: 100%;
+        gap: var(--padding);
+
+
+    }
+
+    .conteudo__area-insercao-texto{
+        width: 50%;
+    }
+
+    .conteudo__area-decodificacao-texto {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        justify-content:baseline;
+        gap: var(--padding);
+        height: 100vh;
+
+    }
+
+    .conteudo {
+
+        width: 100%;
+        flex-direction: column;
+        gap: var(--padding);
+        justify-content: baseline;
+        height: auto;
+
+    }
+
+    .conteudo__area-insercao-texto{
+        width: 100%;
+        height: 45vh;
+    }
+
+    .conteudo__area-decodificacao-texto {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .dados-pessoais {
+        height: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --padding: 20px;
+    }
+
+    .conteudo__area-decodificacao-texto__container-logo{
+        display: none;
+    }
+
+
+    .conteudo__area-insercao-texto{
+        height: 50vh;
+    }
+
+
+    .dados-pessoais {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .area-insercao-texto__titulo {
+        font-size: 20px;
+    }
+
+    .conteudo__area-insercao-texto__campo-texto__botoes {
+        gap: var(--padding);
+    }
+
+    .conteudo__area-insercao-texto__campo-texto__botoes__botao-criptografar,
+    .conteudo__area-insercao-texto__campo-texto__botoes__botao-descriptografar,
+    .conteudo__area-decodificacao-texto__container-conteudo__botao-copiar {
+        font-size: 13px;
+        width: 100%;
+        height: 30px;
+    }
+
+    .conteudo__area-insercao-texto__campo-texto__botoes__botao-criptografar:hover,
+    .conteudo__area-insercao-texto__campo-texto__botoes__botao-descriptografar:hover,
+    .conteudo__area-decodificacao-texto__container-conteudo__botao-copiar:hover {
+        font-size: 14px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .conteudo__area-insercao-texto__campo-texto__botoes {
+        flex-direction: column;
+    }
+
+}
