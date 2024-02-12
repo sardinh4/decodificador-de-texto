@@ -77,7 +77,7 @@ function criptografar() {
             } else if (valorTextarea[i] === "u") {
                 valorTextarea[i] = "ufat";
             } else if (valorTextarea[i] === "E") {
-                valorTextarea[i] = "ENTER";
+                valorTextarea[i] = "Enter";
             } else if (valorTextarea[i] === "I") {
                 valorTextarea[i] = "Imes";
             } else if (valorTextarea[i] === "A") {
