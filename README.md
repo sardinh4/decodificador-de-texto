@@ -12,3 +12,5 @@ A letra "I" é convertida para "Imes"
 A letra "A" é convertida para "Ai"
 A letra "O" é convertida para "Ober"
 A letra "U" é convertida para "Ufat"
+
+#challengeonedecodificador5
